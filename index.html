@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twentynine Beauty Salon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header gabungin navbar + hero -->
+    <header class="hero-header" id="home">
+      <nav class="navbar">
+        <div class="logo">Twentynine Salon</div>
+        <div class="toggle-btn">&#9776;</div>
+        <div class="nav-menu">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#layanan">Menu</a>
+          <a href="#lokasi">Location</a>
+        </div>
+      </nav>
+
+      <div class="hero-content fade-in">
+        <h1>Selamat Datang di Twentynine Beauty Salon</h1>
+        <p>Siap membuat anda tampil lebih cantik 💖</p>
+        <a href="https://wa.me/628983184139" class="btn-book" target="_blank"
+          >Booking Now</a
+        >
+      </div>
+    </header>
+
+    <!-- about -->
+    <section class="about fade-in" id="about">
+      <div class="about-wrapper">
+        <div class="about-text">
+          <h2>Tentang Kami</h2>
+          <p>
+            Twentynine Beauty Salon adalah ruang perawatan untuk kamu yang ingin
+            tampil cantik, merasa rileks, dan memanjakan diri. Kami percaya
+            bahwa setiap perempuan berhak merasakan self-love dengan suasana
+            lembut, pelayanan profesional, dan sentuhan penuh perhatian. ✨
+            Beauty is a feeling. Kami bantu kamu merasakannya 💖
+          </p>
+        </div>
+        <div class="about-emoji">💅</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review -->
+    <section class="reviews fade-in" id="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review-container">
+        <div class="review-track">
+          <div class="review-card">
+            <p>
+              "Parfait ! Les filles sont très gentilles et très talentueuses !
+              Je recommande !"
+            </p>
+            <span>— Valentine Grenier ⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="review-card">
+            <p>
+              "I had a great experience at Twenty Nine with Bila. She was so
+              kind and helpful! She tested out two different colours on my nails
+              when I couldn’t decide, and helped me choose. She also did a
+              really cute design (one of her own) on two of my nails. They
+              turned out great, highly recommend! Thanks Bila!"
+            </p>
+            <span>— Siobhan McGregor ⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="review-card">
+            <p>
+              "Amazing experience! In love with my fingernails and toes! Great
+              service highly recommend."
+            </p>
+            <span>— Jodie Collins ⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="review-card">
+            <p>
+              "Nice and lovely place for express manicure. She is helpful and
+              friendly. Nice job! Recommend it~"
+            </p>
+            <span>— Amber L ⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="review-card">
+            <p>
+              "Was such a lovely relaxing experience. The girls are SO sweet and
+              did a great job on my manicure and lash lift."
+            </p>
+            <span>— Emma Bruce ⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu -->
+    <section class="services" id="layanan">
+      <h2>Layanan Kami</h2>
+      <div class="service-grid">
+        <div class="card">
+          <img src="img/kuku.jpg" alt="Pedicure" />
+          <h3>Pedicure</h3>
+          <p>Kaki bersih, kuku rapi dan cantik.</p>
+        </div>
+        <div class="card">
+          <img src="img/kuku2.jpg" alt="Menicure" />
+          <h3>Menicure</h3>
+          <p>Tangan bersih, kuku rapi dan cantik.</p>
+        </div>
+        <div class="card">
+          <img src="img/kuku3.jpg" alt="gel polish" />
+          <h3>Gel polish</h3>
+          <p>Kuku colorfull, cantik, dan kuat</p>
+        </div>
+        <div class="card">
+          <img src="img/eyelash.jpg" alt="eyelash Extension" />
+          <h3>Eyelash Extension</h3>
+          <p>Bulu mata panjang dan lentik.</p>
+        </div>
+        <div class="card">
+          <img src="img/eyelash.jpg" alt="eyelash Extension" />
+          <h3>Waxing</h3>
+          <p>Tangan & kaki menjadi halus tanpa bulu.</p>
+        </div>
+        <div class="card">
+          <img src="img/kuku5.jpg" alt="Pink Flower Touch" />
+          <h3>Brow treatment</h3>
+          <p>Alis menjadi rapi dan cantik.</p>
+        </div>
+        <div class="card">
+          <img src="img/kuku4.jpg" alt="nail Extension" />
+          <h3>Nail Extension</h3>
+          <p>Kuku panjang yang terlihat natural.</p>
+        </div>
+        <div class="card">
+          <img src="img/kuku4.jpg" alt="nail Extension" />
+          <h3>Lashlift</h3>
+          <p>Bulu mata lentik dengan natural</p>
+        </div>
+      </div>
+
+      <div class="catalog-link">
+        <a href="katalog.pdf" target="_blank">Lihat Katalog Lengkap</a>
+      </div>
+    </section>
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h3 id="popup-title">Treatment Title</h3>
+        <p id="popup-desc">Deskripsi treatment akan muncul di sini.</p>
+      </div>
+    </div>
+
+    <!-- lokasi -->
+
+    <section class="lokasi fade-in" id="lokasi">
+      <h2>Lokasi Kami</h2>
+      <p>Jl. Pandawa No.1, Legian, Kuta, Badung, Bali 80361.</p>
+
+      <div class="maps-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.4293690635294!2d115.17165871431957!3d-8.708209891357813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2470a71cf0dfb%3A0x4fbdc65f1b5287a2!2sJl.%20Pandawa%20No.1%2C%20Legian%2C%20Kuta%2C%20Kabupaten%20Badung%2C%20Bali%2080361!5e0!3m2!1sid!2sid!4v1720520881467!5m2!1sid!2sids"
+          width="100%"
+          height="300"
+          style="border: 0; border-radius: 12px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- konsultasi -->
+    <section class="konsultasi fade-in" id="konsultasi">
+      <div class="konsultasi-card">
+        <h3>Konsultasi Gratis 💬</h3>
+        <p>Masih bingung pilih treatment? Yuk, konsultasi dulu aja gratis!</p>
+        <a href="https://wa.me/6281234567890" class="btn-wa" target="_blank"
+          >Chat via WhatsApp</a
+        >
+      </div>
+    </section>
+
+    <!-- galeri -->
+    <section class="galeri fade-in" id="galeri">
+  <h2>Galeri Twentynine</h2>
+  <div class="galeri-grid">
+    <img src="img/kuku3.jpg" alt="Galeri 1" />
+    <img src="img/kuku5.jpg" alt="Galeri 2" />
+    <img src="img/eyelash.jpg" alt="Galeri 3" />
+    <img src="img/kuku.jpg" alt="Galeri 4" />
+  </div>
+</section>
+
+    <!-- fotter -->
+    <footer class="footer">
+  <p>© 2025 Twentynine Beauty Salon</p>
+  <div class="sosmed">
+    <a href="https://instagram.com/akunmu" target="_blank">Instagram</a>
+    <a href="https://tiktok.com/@akunmu" target="_blank">TikTok</a>
+    <a href="https://wa.me/628983184139" target="_blank">WhatsApp</a>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
