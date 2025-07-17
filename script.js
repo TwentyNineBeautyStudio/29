@@ -43,3 +43,18 @@ const navMenu = document.querySelector(".nav-menu");
 toggleBtn.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
+
+function setLanguage(lang) {
+  const idEls = document.querySelectorAll(".lang-id");
+  const enEls = document.querySelectorAll(".lang-en");
+
+  if (lang === "en") {
+    idEls.forEach(el => el.style.display = "none");
+    enEls.forEach(el => el.style.display = "block");
+  } else {
+    enEls.forEach(el => el.style.display = "none");
+    idEls.forEach(el => el.style.display = "block");
+  }
+}
+
+setLanguage("id");

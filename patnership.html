@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patnership - Twentynine Beauty Studio</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        background-color: #fff0f5;
+        color: #4b4b4b;
+        padding: 0 16px 100px;
+      }
+      .lang-switch {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 10;
+      }
+      .lang-switch button {
+        background: #f8c8dc;
+        border: none;
+        border-radius: 12px;
+        padding: 4px 10px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      h1 {
+        text-align: center;
+        color: #c76094;
+        margin-top: 80px;
+      }
+      .card {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 600px;
+      }
+      .card h2 {
+        margin-top: 0;
+        color: #c76094;
+        text-align: center;
+      }
+      .card .sub {
+        margin-top: 12px;
+      }
+      .card p {
+        margin: 4px 0;
+      }
+      .card span.icon {
+        margin-right: 8px;
+        color: #c76094;
+      }
+      .cta {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .cta a {
+        display: inline-block;
+        background-color: #c76094;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+      .cta a:hover {
+        background-color: #a84f7c;
+      }
+      .lang-id,
+      .lang-en {
+        display: none;
+      }
+      .lang-id.active,
+      .lang-en.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lang-switch">
+      <button onclick="toggleLang()">ID / EN</button>
+    </div>
+
+    <div class="lang-id active">
+      <h1>Program Patnership</h1>
+
+      <div class="card">
+        <h2>Treat & Repeat Pass</h2>
+        <div class="sub"><strong>Benefit:</strong></div>
+        <p>
+          <span class="icon">🌸</span>Diskon 20% khusus hari kerja (Senin–Jumat)
+        </p>
+        <p>
+          <span class="icon">🌸</span>Free nail art 2 jari setiap spend 200rb
+        </p>
+        <div class="sub"><strong>Syarat dan Ketentuan:</strong></div>
+        <p><span class="icon">🌸</span>Hanya berlaku untuk warga lokal</p>
+        <p><span class="icon">🌸</span>Berlaku selama 2 minggu</p>
+        <p>
+          <span class="icon">🌸</span>Tidak dapat digabung dengan promo/paket
+          lain
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Beauty Referral</h2>
+        <div class="sub"><strong>Benefit:</strong></div>
+        <p>
+          <span class="icon">🌸</span>Diskon 25rb tiap teman baru yang dibawa
+          (berlaku kelipatan)
+        </p>
+        <p>
+          <span class="icon">🌸</span>Bawa 3 teman atau lebih dapat free nail art 1 jari
+          per teman
+        </p>
+        <div class="sub"><strong>Syarat dan Ketentuan:</strong></div>
+        <p><span class="icon">🌸</span>Berlaku hanya pada hari kunjungan</p>
+        <p><span class="icon">🌸</span>Teman wajib treatment min. 100rb</p>
+        <p>
+          <span class="icon">🌸</span>Tidak berlaku untuk teman yang pernah
+          datang
+        </p>
+        <p><span class="icon">🌸</span>Tidak bisa digabung promo/paket lain</p>
+        <p><span class="icon">🌸</span>minimal membawa 2 teman</p>
+      </div>
+
+      <div class="card">
+        <h2>Holiday Pass</h2>
+        <div class="sub"><strong>Benefit:</strong></div>
+        <p>
+          <span class="icon">🌸</span>Diskon 10% tiap layanan selama masa
+          liburan
+        </p>
+        <p>
+          <span class="icon">🌸</span>Voucher 15% jika datang kembali dalam 1
+          minggu
+        </p>
+        <div class="sub"><strong>Syarat dan Ketentuan:</strong></div>
+        <p><span class="icon">🌸</span>Berlaku untuk pengunjung liburan</p>
+        <p><span class="icon">🌸</span>Berlaku selama 1 minggu</p>
+        <p>
+          <span class="icon">🌸</span>Voucher 15% hanya untuk kunjungan ke-2
+        </p>
+        <p><span class="icon">🌸</span>Tidak bisa digabung promo/paket lain</p>
+      </div>
+
+      <div class="card">
+        <h2>Beauty Shoutout</h2>
+        <div class="sub"><strong>Benefit:</strong></div>
+        <p><span class="icon">🌸</span>Diskon 15% dari total treatment</p>
+        <p><span class="icon">🌸</span>Free nail art 4 jari</p>
+        <div class="sub"><strong>Syarat dan Ketentuan:</strong></div>
+        <p>
+          <span class="icon">🌸</span>Posting video treatment di IG feed selama
+          2 hari
+        </p>
+        <p>
+          <span class="icon">🌸</span>Posting hasil di IG story selama 1x24 jam
+        </p>
+        <p><span class="icon">🌸</span>Kunjungan berlaku hari itu saja</p>
+        <p><span class="icon">🌸</span>Akun publik & follower min. 400</p>
+        <p>
+          <span class="icon">🌸</span>Wajib tag @twentynine di caption & story
+        </p>
+        <p>
+          <span class="icon">🌸</span
+          ><strong
+            >Jika melanggar (hapus konten lebih cepat), sanksi akan
+            diberikan</strong
+          >
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Syarat & Ketentuan Umum</h2>
+        <p><span class="icon">🌸</span>Follow akun IG @twentynine</p>
+        <p>
+          <span class="icon">🌸</span>Wajib review setelah treatment (Google
+          Maps)
+        </p>
+        <p>
+          <span class="icon">🌸</span>Tunjukkan halaman patnership ke kami (WA
+          atau DM)
+        </p>
+        <p>
+          <span class="icon">🌸</span>Boleh ikut patnership lain setelah masa
+          berlaku selesai
+        </p>
+        <p>
+          <span class="icon">🌸</span>Satu kunjungan hanya bisa pakai 1
+          patnership
+        </p>
+        <p><span class="icon">🌸</span>Diskon berlaku untuk total treatment</p>
+        <p><span class="icon">🌸</span>Program bisa berubah sewaktu-waktu</p>
+      </div>
+
+      <div class="cta">
+        <a href="https://wa.me/62xxxxxx">Gabung Patnership Sekarang</a>
+      </div>
+    </div>
+
+    <!-- Terjemahan full English nanti diisi di sini (siap dimasukkan kapan aja) -->
+    <div class="lang-en">
+      <h1>Partnership Program</h1>
+
+      <div class="card">
+        <h2>Treat & Repeat Pass</h2>
+        <div class="sub"><strong>Benefits:</strong></div>
+        <p>
+          <span class="icon">🌸</span>20% discount on weekdays (Monday–Friday)
+        </p>
+        <p>
+          <span class="icon">🌸</span>Free 2-finger nail art for every IDR 200K
+          spent
+        </p>
+        <div class="sub"><strong>Terms & Conditions:</strong></div>
+        <p><span class="icon">🌸</span>Valid for local residents only</p>
+        <p><span class="icon">🌸</span>Valid for 2 weeks</p>
+        <p>
+          <span class="icon">🌸</span>Cannot be combined with other
+          promos/packages
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Beauty Referral</h2>
+        <div class="sub"><strong>Benefits:</strong></div>
+        <p>
+          <span class="icon">🌸</span>IDR 25K off for each new friend you bring
+          (multiply as needed)
+        </p>
+        <p>
+          <span class="icon">🌸</span>Bring 3 or more friends = free 1-finger nail art
+          per friend
+        </p>
+        <div class="sub"><strong>Terms & Conditions:</strong></div>
+        <p>
+        <span class="icon">🌸</span>Only valid on the same visit day</p>
+        <p>
+          <span class="icon">🌸</span>Each friend must spend at least IDR 100K
+        </p>
+        <p>
+          <span class="icon">🌸</span>Not valid for friends who have visited
+          before
+        </p>
+        <p>
+          <span class="icon">🌸</span>Cannot be combined with other
+          promos/packages
+        </p>
+        <span class="icon">🌸</span>bring at least 2 friends 
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Holiday Pass</h2>
+        <div class="sub"><strong>Benefits:</strong></div>
+        <p>
+          <span class="icon">🌸</span>10% off all services during holiday season
+        </p>
+        <p>
+          <span class="icon">🌸</span>15% voucher if you return within 1 week
+        </p>
+        <div class="sub"><strong>Terms & Conditions:</strong></div>
+        <p><span class="icon">🌸</span>Valid for holiday visitors</p>
+        <p><span class="icon">🌸</span>Valid for 1 week</p>
+        <p><span class="icon">🌸</span>15% voucher valid only for 2nd visit</p>
+        <p>
+          <span class="icon">🌸</span>Cannot be combined with other
+          promos/packages
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Beauty Shoutout</h2>
+        <div class="sub"><strong>Benefits:</strong></div>
+        <p><span class="icon">🌸</span>15% discount on total treatment</p>
+        <p><span class="icon">🌸</span>Free 4-finger nail art</p>
+        <div class="sub"><strong>Terms & Conditions:</strong></div>
+        <p>
+          <span class="icon">🌸</span>Post a video of your treatment on IG feed
+          for 2 days
+        </p>
+        <p>
+          <span class="icon">🌸</span>Post the result on IG story for 24 hours
+        </p>
+        <p><span class="icon">🌸</span>Only valid for the same day visit</p>
+        <p>
+          <span class="icon">🌸</span>Public account with at least 400 followers
+        </p>
+        <p>
+          <span class="icon">🌸</span>Must tag @twentynine in caption & story
+        </p>
+        <p>
+          <span class="icon">🌸</span
+          ><strong>If violated (content removed early), penalties apply</strong>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>General Terms & Conditions</h2>
+        <p><span class="icon">🌸</span>Follow our IG account @twentynine</p>
+        <p>
+          <span class="icon">🌸</span>Leave a review after treatment (Google
+          Maps)
+        </p>
+        <p><span class="icon">🌸</span>Show this partnership page (WA or DM)</p>
+        <p>
+          <span class="icon">🌸</span>You can join another partnership after the
+          current one ends
+        </p>
+        <p><span class="icon">🌸</span>One visit = one partnership only</p>
+        <p><span class="icon">🌸</span>Discount applies to total treatment</p>
+        <p><span class="icon">🌸</span>Program may change at any time</p>
+      </div>
+
+      <div class="cta">
+        <a href="https://wa.me/62xxxxxx">Join Partnership Now</a>
+      </div>
+    </div>
+
+    <script>
+      let lang = "id";
+      function toggleLang() {
+        lang = lang === "id" ? "en" : "id";
+        document
+          .querySelector(".lang-id")
+          .classList.toggle("active", lang === "id");
+        document
+          .querySelector(".lang-en")
+          .classList.toggle("active", lang === "en");
+      }
+    </script>
+  </body>
+</html>
